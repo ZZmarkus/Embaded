@@ -31,7 +31,7 @@ unsigned int makepixel(U32 r, U32 g, U32 b){
 }
 
 struct fb_var_screeninfo fvs;
-int frameBufferInit(void){ 
+int frameBufferInit(void){
     int frame_fd;
     int check;
     if((frame_fd = open("/dev/fb0",O_RDWR))<0) {
